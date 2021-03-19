@@ -1,48 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Partner-Clone-Challenge</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="header-fluid-container">
-        <div class="row"></div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-        </div>
-    </div>
-    <div class="main-fluid-container">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-    </div>
-    <div class="footer-fluid-container">
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-8">
-<div class="row">
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-</div>
+
+    <div class="header-fluid-container bg-dark text-white sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="links row justify-content-center simple-top-border py-2 d-none d-md-flex">
+            <div class="col-1">
+                <h5><small><strong>MOVIES</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>TV</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>GAMES</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>BOOKS</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>COMICS</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>CULTURE</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>VIDEO</strong></small></h5>
+            </div>
+            <div class="col-1">
+                <h5><small><strong>SHOPPING</strong></small></h5>
             </div>
         </div>
+    </div>
+
+    <div class="main-fluid-container bg-white">
+        <div class="bg-image row text-white align-items-end pl-5 pb-3">
+            <div class="col-12 col-md-6">
+                <button class="movies"><strong>MOVIES</strong></button>
+                <h1 class="title pt-3"><strong> Zack Snyder's Justice League: What's New?</strong></h1>
+                <h5>By <strong class="title pt-5">David Crow</strong></h5>
+            </div>
         </div>
+        <div class="thumbnails row p-5 justify-content-center">
+            <div class="col-md-3 text-center mb-5 my-md-0 order-2 order-md-1">
+                <img class="img-thumbnail" src="./Assets/partner-thumbnail-1.jpg" alt="">
+                <button class="games my-3"><strong>GAMES</strong></button>
+                <h4 class="title"><strong>The Legend of Zelda: Are Zelda and Link Really Brother and Sister?</strong>
+                </h4>
+                <h5>By <strong class="title">Matthew Byrd</strong></h5>
+            </div>
+            <div class="col-md-3 text-center mb-5 my-md-0 order-1 order-md-2">
+                <img class="img-thumbnail" src="./Assets/partner-thumbnail-2.jpg" alt="">
+                <button class="tv my-3"><strong>TV</strong></button>
+                <h2 class="title"><strong>Celebrating The Sopranos Review: Three Part Dov Dodesn't Stop
+                        Believin'</strong></h2>
+                <h5>By <strong class="title">Tony Sokol</strong></h5>
+            </div>
+            <div class="col-md-3 text-center my-md-0 order-3">
+                <img class="img-thumbnail" src="./Assets/partner-thumbnail-3.jpg" alt="">
+                <button class="tv my-3"><strong>TV</strong></button>
+                <h4 class="title"><strong>Could Durge's Star Wars Return Lead to a Role in The Mandalorian or Book of
+                        Boba
+                        Fett?</strong></h4>
+                <h5>By <strong class="title">Joseph Baxter</strong></h5>
+            </div>
+        </div>
+        <div class="row grey justify-content-center pt-5 pt-md-0 py-0 py-md-4">
+            <div class="col-9 col-md-3">
+                <h2 class="label text-center py-1"><strong>BIG STORIES</strong></h2>
+            </div>
+        </div>
+        <div class="row top-border grey d-none d-md-flex"></div>
+        <div class="stories row grey p-5">
+            <div class="col-md-3 text-center">
+                <img class="img-thumbnail mb-3" src="./Assets/partner-stories-1.jpg" alt="">
+                <button class="culture"><strong>CULTURE</strong></button>
+                <h4 class="title my-2"><strong>Aqualung at 50: Jethro Tull’s Half Concept Album Hits Half a
+                        Century</strong>
+                </h4>
+                <h5>By <strong class="title">Tony Sokol</strong></h5>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-thumbnail mb-3" src="./Assets/partner-stories-2.jpg" alt="">
+                <button class="tv"><strong>TV</strong></button>
+                <h4 class="title my-2"><strong>Loki May Already Be the Most Popular Marvel Disney+ Series</strong></h4>
+                <h5>By <strong class="title">Alec Bojalad</strong></h5>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-thumbnail mb-3" src="./Assets/partner-stories-3.jpg" alt="">
+                <button class="tv"><strong>TV</strong></button>
+                <h4 class="title my-2"><strong>The Walking Dead Season 10 Episode 20 Exclusive Clip Brings Back the
+                        Commonwealth</strong>
+                </h4>
+                <h5>By <strong class="title">John Saavedra</strong></h5>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-thumbnail mb-3" src="./Assets/partner-stories-4.jpg" alt="">
+                <button class="movies"><strong>MOVIES</strong></button>
+                <h4 class="title my-2"><strong>Monster Madness: Vote for Your Favorite Monsters</strong></h4>
+                <h5>By <strong class="title">Alec Bojalad</strong></h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-3 pt-5 mt-md-0 py-md-4">
+                <h2 class="label text-center py-2"><strong>LATEST VIDEOS</strong></h2>
+            </div>
+        </div>
+        <div class="row top-border d-none d-md-flex"></div>
+        <div class="videos row">
+            <div class="col-md-8 p-5 position-relative">
+                <div class="row justify-content-center py-4">
+                    <div class="col-md-4 py-0 py-md-4">
+                        <h2 class="label py-2 text-center"><strong>LATEST STORIES</strong></h2>
+                    </div>
+                </div>
+                <div class="row py-4 top-border">
+                    <div class="col-md-6">
+                        <img class="img-thumbnail mb-3" src="./Assets/partner-videos-1.jpg" alt="">
+                        <button class="movies"><strong>MOVIES</strong></button>
+                        <h4 class="mt-3"><strong>Mortal Kombat: The Challenges of Making the Movie Reboot</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>Gene Ching</strong></h5>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-thumbnail mb-3" src="./Assets/partner-videos-2.jpg" alt="">
+                        <button class="sponsored"><strong>SPONSORED</strong></button>
+                        <h4 class="mt-3"><strong>The Legacy of Women in Anime with Funimation</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>Daniel Kurland</strong></h5>
+                    </div>
+                </div>
+                <div class="row simple-top-border py-4">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="./Assets/partner-videos-3.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <button class="movies"><strong>MOVIES</strong></button>
+                        <h4 class="mt-3"><strong>Zack Snyder's Justice League: DC Comics and DCEU Easter Eggs
+                                Guide</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>Mike Cecchini</strong></h5>
+                    </div>
+                </div>
+                <div class="row simple-top-border py-4">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="./Assets/partner-videos-4.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <button class="games"><strong>GAMES</strong></button>
+                        <h4 class="mt-3"><strong>Injustice Beat Zack Snyder's Justice League to the Punch</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>Matthew Byrd</strong></h5>
+                    </div>
+                </div>
+                <div class="row simple-top-border py-4">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="./Assets/partner-videos-5.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <button class="movies"><strong>MOVIES</strong></button>
+                        <h4 class="mt-3"><strong>How Zack Snyder’s Justice League Leaves the Door Open to Restore the
+                                Snyder
+                                Verse</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>David Crow</strong></h5>
+                    </div>
+                </div>
+                <div class="row simple-top-border py-4">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="./Assets/partner-videos-6.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <button class="tv"><strong>TV</strong></button>
+                        <h4 class="mt-3"><strong>The Falcon and The Winter Soldier Episode 1 Review
+                                (Spoiler-Free)</strong></h4>
+                        <h5 class="mt-3">March 18, 2021 | By <strong>Alec Bojalad</strong></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grey faded-top-border mt-5 pt-5">
+                <div class="row justify-content-center py-4">
+                    <div class="col-md-6">
+                        <h2 class="label py-2 text-center"><strong>MUST READS</strong></h2>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col text-center">
+                        <button class="movies"><strong>MOVIES</strong></button>
+                        <h4 class="mt-3 title"><strong>From Hitchcock to Star Wars: What Makes a Great
+                                MacGuffin</strong></h4>
+                        <h5 class="mt-3">By <strong class="title">David Crow</strong></h5>
+                    </div>
+                </div>
+                <div class="row my-4 thin-faded-top-border">
+                    <div class="col text-center p-3">
+                        <button class="tv"><strong>TV</strong></button>
+                        <h4 class="mt-3 title"><strong>Will Star Trek: Strange New Worlds Cast More Characters from The
+                                Cage?</strong></h4>
+                        <h5 class="mt-3">By <strong class="title">Joseph Baxter</strong></h5>
+                    </div>
+                </div>
+                <div class="row my-4 thin-faded-top-border">
+                    <div class="col text-center">
+                        <button class="games mt-3"><strong>GAMES</strong></button>
+                        <h4 class="mt-3 title"><strong>Street Fighter vs. Mortal Kombat: The Many Ways the Crossover
+                                Almost
+                                Happened</strong></h4>
+                        <h5 class="mt-3">By <strong class="title">Gavin Jasper</strong></h5>
+                    </div>
+                </div>
+                <div class="row my-4 thin-faded-top-border">
+                    <div class="col text-center">
+                        <button class="books mt-3"><strong>BOOKS</strong></button>
+                        <h4 class="mt-3 title"><strong>Where Are All of the Mothers in Fantasy Fiction?</strong></h4>
+                        <h5 class="mt-3">By <strong class="title">Den of Geek Staff</strong></h5>
+                    </div>
+                </div>
+                <div class="row my-4 thin-faded-top-border">
+                    <div class="col text-center">
+                        <button class="sponsored mt-3"><strong>SPONSORED</strong></button>
+                        <h4 class="mt-3 title"><strong>The Latest and Greatest Funko Items To Purchase Now</strong></h4>
+                        <h5 class="mt-3">By <strong class="title">Aaron Sagers</strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-fluid-container bg-dark text-white px-4 pb-5 pb-md-0 py-3">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <h2><strong>DEN OF GEEK</strong></h2>
+                    <div>
+                        <i class="fas fa-facebook    "></i>
+                        <i class="fas fa-twitter    "></i>
+                        <i class="fas fa-instagram    "></i>
+                        <i class="fas fa-youtube    "></i>
+                        <i class="fas fa-twitch    "></i>
+                    </div>
+                    <p>Den of Geek<i class="fas fa-trademark    "></i> is a registered trademark</p>
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5><strong>ABOUT US</strong></h5>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><strong>SITEMAP</strong></h5>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><strong>AUTHORS</strong></h5>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><strong>SUBSCRIBE TODAY!</strong></h5>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><strong>PRIVACY POLICY</strong></h5>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><strong>PRIVACY SETTINGS</strong></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
+
 </html>
